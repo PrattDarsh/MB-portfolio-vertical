@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Skranji&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Meenakshi Babu</title>
+</head>
+
+<body class="text-white bg-black">
+    <!-- --------------------------------------------------LANDING------------------------------------------------ -->
+
+    <section class="flex items-center justify-center h-screen" id="landing">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex items-center justify-center space-x-4 intro"> <span class="h-0.5 w-32 bg-white"></span>
+                <p class="text-4xl font-bold tracking-widest text-center uppercase">This is</p>
+                <span class="h-0.5 w-32 bg-white"></span>
+            </div>
+
+            <div class="flex text-center text-pink-500 text-8xl md:text-9xl cursive ">
+                <div class="first"> Meenakshi</div>
+                <div class="text-white second">Babu</div>
+            </div>
+            <p class="mt-4 text-3xl text-center caption">She is a <span class="text-green-300 cursive">lucid
+                    realist</span> and
+                a
+                <span class="text-green-300 cursive">positive enthusiast</span>
+            </p>
+        </div>
+
+        <div onclick="showValues()" onmouseover="showArrow()" onmouseleave="removeArrow()"
+            class="absolute flex items-center space-x-2 text-6xl text-white text-gray-400 cursor-pointer valuesText bottom-12 right-12 cursive hover:text-pink-500 group">
+            <div class=""> Her <svg xmlns="http://www.w3.org/2000/svg"
+                    class="inline-block w-12 h-12 text-white fill-current " id="valueArrow" viewBox="0 0 24 24">
+                    <path
+                        d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                </svg><br>Values</div>
+
+        </div>
+    </section>
+
+
+    <section class="fixed top-0 hidden w-screen mx-auto" id="values">
+        <div class="max-w-6xl mx-auto my-12 space-y-12 text-black hand">
+            <img src="images/inkpot.svg" class="absolute bottom-0 right-12 h-72 inkpot" alt="">
+            <img src="images/back.svg" onclick="goback()"
+                class="absolute top-0 h-12 transform cursor-pointer left-12 back hover:scale-110" alt="">
+            <img src="images/watch.svg" class="absolute top-12 right-12 h-72 watch" alt="">
+            <p class="text-4xl val1"><img class="absolute h-12 -left-14 pencil" src="images/pencil.svg">I am fascinated
+                by the
+                human ability to
+                learn, adapt,
+                and change.
+            </p>
+            <p class="text-4xl val2">I believe that the world of the future is dependent on the new generation of
+                thinkers.
+            </p>
+            <p class="text-4xl val3">I believe in the moral dimension of technology.</p>
+            <p class="text-4xl val4">I believe that life is about shared belonging.
+
+            </p>
+            <p class="text-4xl val5">I believe in widening the radius of compassion and in the power of mutuality.
+
+            </p>
+            <p class="text-4xl val6">I believe in listening to the inner voice amid the rumble. </p>
+            <p class="text-4xl val7">I believe that it is necessary to reinvent oneself.
+
+            </p>
+            <p class="text-4xl val8">I believe that learning & teaching are fundamentally collaborative processes.
+
+            </p>
+            <p class="text-4xl val9">I live by the motto – quality learning for all.. </p>
+        </div>
+
+    </section>
+    <!-- ---------------------------------------------SECTION1----------------------------------------------- -->
+    <section class="relative h-screen mx-auto max-w-7xl" id="section1">
+        <div class="my-32 md:flex" id="edu1">
+            <div class="">
+                <p class="max-w-lg text-4xl" id="text1">Holds a master's in <span class="italic">Innovation &
+                        Entrepreneurship</span> from <span class="font-bold text-green-400">HEC Paris.</span></p>
+                </p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    class="absolute z-50 mt-12 text-green-400 fill-current hero2 left-72 leaf" viewBox="0 0 24 24">
+                    <path
+                        d="M15.787 7.531c-5.107 2.785-12.72 9.177-15.787 15.469h2.939c.819-2.021 2.522-4.536 3.851-5.902 8.386 3.747 17.21-2.775 17.21-11.343 0-1.535-.302-3.136-.92-4.755-2.347 3.119-5.647 1.052-10.851 1.625-7.657.844-11.162 6.797-8.764 11.54 3.506-3.415 9.523-6.38 12.322-6.634z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    class="absolute z-50 text-pink-500 transform rotate-90 fill-current hero2 left-52 leaf"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M15.787 7.531c-5.107 2.785-12.72 9.177-15.787 15.469h2.939c.819-2.021 2.522-4.536 3.851-5.902 8.386 3.747 17.21-2.775 17.21-11.343 0-1.535-.302-3.136-.92-4.755-2.347 3.119-5.647 1.052-10.851 1.625-7.657.844-11.162 6.797-8.764 11.54 3.506-3.415 9.523-6.38 12.322-6.634z" />
+                </svg>
+
+            </div>
+
+            <img src="images/Under_tree.png" id="img1" class="max-w-xl" alt="">
+            <div class="self-center space-y-6">
+                <p class="max-w-lg text-4xl" id="textx">And has a certification in <span class="italic">Design
+                        Thinking</span> from
+                    <span class="font-bold text-green-400">Stanford
+                        d.school.</span> and <span class="font-bold text-green-400">HEC Paris.</span>
+                </p>
+                <div class="" id="btn1">
+                    <button class="px-6 py-4 border-2 border-pink-500 " onclick="showEdu()">Know
+                        More</button>
+                </div>
+                <!-- <div class="absolute left-0 p-6 bg-pink-400 bottom-54 dot"></div> -->
+            </div>
+
+        </div>
+        <div class="absolute h-screen eduPop top-56 left-32 ">
+            <!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In  -->
+            <img src="images/mountain.svg" id="mountain" class="absolute bottom-0 -right-0" alt="">
+
+
+            <svg id="cloud1" class="absolute w-32 h-32 text-white fill-current -right-72"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M12 3c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z" />
+            </svg>
+
+            <svg id="cloud2" class="absolute h-32 text-white fill-current -top-32 -right-80"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                    d="M12 3c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" id="sun"
+                class="absolute h-32 text-yellow-400 fill-current -top-32 -left-32" viewBox="0 0 24 24">
+                <path
+                    d="M4.069 13h-4.069v-2h4.069c-.041.328-.069.661-.069 1s.028.672.069 1zm3.034-7.312l-2.881-2.881-1.414 1.414 2.881 2.881c.411-.529.885-1.003 1.414-1.414zm11.209 1.414l2.881-2.881-1.414-1.414-2.881 2.881c.528.411 1.002.886 1.414 1.414zm-6.312-3.102c.339 0 .672.028 1 .069v-4.069h-2v4.069c.328-.041.661-.069 1-.069zm0 16c-.339 0-.672-.028-1-.069v4.069h2v-4.069c-.328.041-.661.069-1 .069zm7.931-9c.041.328.069.661.069 1s-.028.672-.069 1h4.069v-2h-4.069zm-3.033 7.312l2.88 2.88 1.415-1.414-2.88-2.88c-.412.528-.886 1.002-1.415 1.414zm-11.21-1.415l-2.88 2.88 1.414 1.414 2.88-2.88c-.528-.411-1.003-.885-1.414-1.414zm6.312-10.897c-3.314 0-6 2.686-6 6s2.686 6 6 6 6-2.686 6-6-2.686-6-6-6z" />
+            </svg>
+
+            <div class="">
+                <p class="max-w-3xl text-4xl text-white edu2">Meenakshi did her MS in Innovation and
+                    Entrepreneurship
+                    from
+                    one of
+                    the most
+                    prestigious business schools in the world, HEC Paris. This program helped her develop crucial
+                    skills
+                    needed for both start-up enterprises and innovation-based business development in bigger firms.
+                </p>
+            </div>
+            <div class="absolute eduPt2 -right-32">
+                <p class="max-w-3xl text-4xl text-white ">Design Thinking (DT) is the process of bringing creative
+                    thinking to innovation that can be applied to any industry. It has brought great benefits in
+                    terms of value creation and competitive advantage to organizations. Meenakshi went to Stanford
+                    d.school in 2019 to learn DT along with educators from across the globe. She also has an
+                    in-depth training in DT as part of her master’s program from HEC Paris.
+
+                </p>
+            </div>
+            <div class="absolute top-0 eduPt3 -right-96">
+                <p class="max-w-3xl text-4xl text-white ">A passionate educator, she has a master’s degree in
+                    Education
+                    from IGNOU, with specialization in Education Management. Her deep interest in teaching & learning
+                    processes and educational psychology has steered her towards a social mission.
+                </p>
+            </div>
+            <div class="absolute eduPt4 -right-32">
+                <p class="max-w-3xl text-4xl text-white ">Intrigued by logical and analytical thinking skills,
+                    Meenakshi was attracted to computer science and chose it as her bachelor’s degree program. She
+                    enjoyed her stint as a programmer before finding her calling in education.
+
+                </p>
+            </div>
+            <button onclick="prev()"
+                class="absolute p-4 mt-4 mr-4 transform rotate-180 border-2 border-pink-500 rounded-full eduClose top-32 left-32"><svg
+                    xmlns="http://www.w3.org/2000/svg" class="text-white fill-current" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+                </svg></button>
+            <button onclick="next()" class="p-4 mt-4 border-2 border-pink-500 rounded-full eduNext"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="text-white fill-current"
+                    viewBox="0 0 24 24">
+                    <path
+                        d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z" />
+                </svg></button>
+
+
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ---------------------------------------------SECTION2----------------------------------------------- -->
+    <section class="h-screen mx-auto max-w-7xl" id="section2">
+        <div class="relative items-center justify-center my-32 md:flex">
+            <div class="space-y-6">
+                <p class="max-w-lg text-4xl" id="text2"> <span class="font-bold text-green-400">Co-founded
+                    </span><span class="italic">Yugen Education
+                        Foundation.</span>
+                </p>
+                <div class="" id="btn2">
+                    <a href="https://yugen.org.in/" target="_blank" class="px-6 py-4 border-2 border-pink-400 ">Know
+                        More</a>
+                </div>
+            </div>
+
+            <img src="images/Under_tree.png" id="img2" class="max-w-xl" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute top-0 text-pink-500 fill-current left-12 animate-spin cross" width="56" height="56"
+                viewBox="0 0 24 24">
+                <path
+                    d="M24 14.187v-4.374c-2.148-.766-2.726-.802-3.027-1.529-.303-.729.083-1.169 1.059-3.223l-3.093-3.093c-2.026.963-2.488 1.364-3.224 1.059-.727-.302-.768-.889-1.527-3.027h-4.375c-.764 2.144-.8 2.725-1.529 3.027-.752.313-1.203-.1-3.223-1.059l-3.093 3.093c.977 2.055 1.362 2.493 1.059 3.224-.302.727-.881.764-3.027 1.528v4.375c2.139.76 2.725.8 3.027 1.528.304.734-.081 1.167-1.059 3.223l3.093 3.093c1.999-.95 2.47-1.373 3.223-1.059.728.302.764.88 1.529 3.027h4.374c.758-2.131.799-2.723 1.537-3.031.745-.308 1.186.099 3.215 1.062l3.093-3.093c-.975-2.05-1.362-2.492-1.059-3.223.3-.726.88-.763 3.027-1.528zm-4.875.764c-.577 1.394-.068 2.458.488 3.578l-1.084 1.084c-1.093-.543-2.161-1.076-3.573-.49-1.396.581-1.79 1.693-2.188 2.877h-1.534c-.398-1.185-.791-2.297-2.183-2.875-1.419-.588-2.507-.045-3.579.488l-1.083-1.084c.557-1.118 1.066-2.18.487-3.58-.579-1.391-1.691-1.784-2.876-2.182v-1.533c1.185-.398 2.297-.791 2.875-2.184.578-1.394.068-2.459-.488-3.579l1.084-1.084c1.082.538 2.162 1.077 3.58.488 1.392-.577 1.785-1.69 2.183-2.875h1.534c.398 1.185.792 2.297 2.184 2.875 1.419.588 2.506.045 3.579-.488l1.084 1.084c-.556 1.121-1.065 2.187-.488 3.58.577 1.391 1.689 1.784 2.875 2.183v1.534c-1.188.398-2.302.791-2.877 2.183zm-7.125-5.951c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.238-5 5s2.238 5 5 5 5-2.238 5-5-2.238-5-5-5z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute text-white fill-current top-12 left-48 animate-spin cross" width="56" height="56"
+                viewBox="0 0 24 24">
+                <path
+                    d="M24 14.187v-4.374c-2.148-.766-2.726-.802-3.027-1.529-.303-.729.083-1.169 1.059-3.223l-3.093-3.093c-2.026.963-2.488 1.364-3.224 1.059-.727-.302-.768-.889-1.527-3.027h-4.375c-.764 2.144-.8 2.725-1.529 3.027-.752.313-1.203-.1-3.223-1.059l-3.093 3.093c.977 2.055 1.362 2.493 1.059 3.224-.302.727-.881.764-3.027 1.528v4.375c2.139.76 2.725.8 3.027 1.528.304.734-.081 1.167-1.059 3.223l3.093 3.093c1.999-.95 2.47-1.373 3.223-1.059.728.302.764.88 1.529 3.027h4.374c.758-2.131.799-2.723 1.537-3.031.745-.308 1.186.099 3.215 1.062l3.093-3.093c-.975-2.05-1.362-2.492-1.059-3.223.3-.726.88-.763 3.027-1.528zm-4.875.764c-.577 1.394-.068 2.458.488 3.578l-1.084 1.084c-1.093-.543-2.161-1.076-3.573-.49-1.396.581-1.79 1.693-2.188 2.877h-1.534c-.398-1.185-.791-2.297-2.183-2.875-1.419-.588-2.507-.045-3.579.488l-1.083-1.084c.557-1.118 1.066-2.18.487-3.58-.579-1.391-1.691-1.784-2.876-2.182v-1.533c1.185-.398 2.297-.791 2.875-2.184.578-1.394.068-2.459-.488-3.579l1.084-1.084c1.082.538 2.162 1.077 3.58.488 1.392-.577 1.785-1.69 2.183-2.875h1.534c.398 1.185.792 2.297 2.184 2.875 1.419.588 2.506.045 3.579-.488l1.084 1.084c-.556 1.121-1.065 2.187-.488 3.58.577 1.391 1.689 1.784 2.875 2.183v1.534c-1.188.398-2.302.791-2.877 2.183zm-7.125-5.951c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.238-5 5s2.238 5 5 5 5-2.238 5-5-2.238-5-5-5z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute text-green-400 fill-current top-2 left-80 animate-spin cross" width="56" height="56"
+                viewBox="0 0 24 24">
+                <path
+                    d="M24 14.187v-4.374c-2.148-.766-2.726-.802-3.027-1.529-.303-.729.083-1.169 1.059-3.223l-3.093-3.093c-2.026.963-2.488 1.364-3.224 1.059-.727-.302-.768-.889-1.527-3.027h-4.375c-.764 2.144-.8 2.725-1.529 3.027-.752.313-1.203-.1-3.223-1.059l-3.093 3.093c.977 2.055 1.362 2.493 1.059 3.224-.302.727-.881.764-3.027 1.528v4.375c2.139.76 2.725.8 3.027 1.528.304.734-.081 1.167-1.059 3.223l3.093 3.093c1.999-.95 2.47-1.373 3.223-1.059.728.302.764.88 1.529 3.027h4.374c.758-2.131.799-2.723 1.537-3.031.745-.308 1.186.099 3.215 1.062l3.093-3.093c-.975-2.05-1.362-2.492-1.059-3.223.3-.726.88-.763 3.027-1.528zm-4.875.764c-.577 1.394-.068 2.458.488 3.578l-1.084 1.084c-1.093-.543-2.161-1.076-3.573-.49-1.396.581-1.79 1.693-2.188 2.877h-1.534c-.398-1.185-.791-2.297-2.183-2.875-1.419-.588-2.507-.045-3.579.488l-1.083-1.084c.557-1.118 1.066-2.18.487-3.58-.579-1.391-1.691-1.784-2.876-2.182v-1.533c1.185-.398 2.297-.791 2.875-2.184.578-1.394.068-2.459-.488-3.579l1.084-1.084c1.082.538 2.162 1.077 3.58.488 1.392-.577 1.785-1.69 2.183-2.875h1.534c.398 1.185.792 2.297 2.184 2.875 1.419.588 2.506.045 3.579-.488l1.084 1.084c-.556 1.121-1.065 2.187-.488 3.58.577 1.391 1.689 1.784 2.875 2.183v1.534c-1.188.398-2.302.791-2.877 2.183zm-7.125-5.951c1.654 0 3 1.346 3 3s-1.346 3-3 3-3-1.346-3-3 1.346-3 3-3zm0-2c-2.762 0-5 2.238-5 5s2.238 5 5 5 5-2.238 5-5-2.238-5-5-5z" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------SECTION3----------------------------------------------- -->
+    <section class="h-screen mx-auto max-w-7xl" id="section3">
+        <div class="relative items-center justify-center my-32 md:flex">
+            <img src="images/Under_tree.png" id="img3" class="max-w-xl" alt="">
+            <div class="space-y-4">
+
+                <p class="max-w-lg text-4xl" id="text3"> Has <span class="font-bold text-green-400">over 17
+                        years</span> of
+                    experience as an educator, including teaching at
+                    <span class="italic"> B-Schools</span>
+                </p>
+
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute text-pink-500 transform -rotate-45 fill-current top-12 book" width="72" height="72"
+                viewBox="0 0 24 24">
+                <path
+                    d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute text-green-400 transform fill-current -rotate-12 top-32 right-32 book" width="72"
+                height="72" viewBox="0 0 24 24">
+                <path
+                    d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute text-white transform rotate-45 fill-current top-2 right-80 book" width="72" height="72"
+                viewBox="0 0 24 24">
+                <path
+                    d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z" />
+            </svg>
+        </div>
+    </section>
+    <!-- ---------------------------------------------SECTION4----------------------------------------------- -->
+    <section class="h-screen mx-auto max-w-7xl" id="section4">
+        <div class="relative items-center justify-center my-32 md:flex">
+            <div class="space-y-6">
+                <p class="max-w-lg text-4xl" id="text4">Is a <span class="font-bold text-green-400">strategy and
+                        innovation</span>
+                    consultant & trains <span class="italic">corporates</span> and <span class="italic">
+                        entrepreneurs.</span>
+                </p>
+                <div class="" id="btn4">
+                    <a href="" class="px-6 py-4 border-2 border-pink-400 ">Know
+                        More</a>
+                </div>
+            </div>
+            <img src="images/Under_tree.png" id="img4" class="max-w-xl" alt="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                class="absolute text-pink-500 transform fill-current top-12 left-12 rotate-12 animate-pulse bulb"
+                viewBox="0 0 24 24">
+                <path
+                    d="M14 19h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0 2h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm.25 2h-4.5l1.188.782c.154.138.38.218.615.218h.895c.234 0 .461-.08.615-.218l1.187-.782zm3.75-13.799c0 3.569-3.214 5.983-3.214 8.799h-1.989c-.003-1.858.87-3.389 1.721-4.867.761-1.325 1.482-2.577 1.482-3.932 0-2.592-2.075-3.772-4.003-3.772-1.925 0-3.997 1.18-3.997 3.772 0 1.355.721 2.607 1.482 3.932.851 1.478 1.725 3.009 1.72 4.867h-1.988c0-2.816-3.214-5.23-3.214-8.799 0-3.723 2.998-5.772 5.997-5.772 3.001 0 6.003 2.051 6.003 5.772zm4-.691v1.372h-2.538c.02-.223.038-.448.038-.681 0-.237-.017-.464-.035-.69h2.535zm-10.648-6.553v-1.957h1.371v1.964c-.242-.022-.484-.035-.726-.035-.215 0-.43.01-.645.028zm-3.743 1.294l-1.04-1.94 1.208-.648 1.037 1.933c-.418.181-.822.401-1.205.655zm10.586 1.735l1.942-1.394.799 1.115-2.054 1.473c-.191-.43-.423-.827-.687-1.194zm-3.01-2.389l1.038-1.934 1.208.648-1.041 1.941c-.382-.254-.786-.473-1.205-.655zm-10.068 3.583l-2.054-1.472.799-1.115 1.942 1.393c-.264.366-.495.763-.687 1.194zm13.707 6.223l2.354.954-.514 1.271-2.425-.982c.21-.397.408-.812.585-1.243zm-13.108 1.155l-2.356 1.06-.562-1.251 2.34-1.052c.173.433.371.845.578 1.243zm-1.178-3.676h-2.538v-1.372h2.535c-.018.226-.035.454-.035.691 0 .233.018.458.038.681z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72"
+                class="absolute text-green-400 transform -rotate-45 fill-current animate-pulse top-32 left-56 bulb"
+                viewBox="0 0 24 24">
+                <path
+                    d="M14 19h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm0 2h-4c-.276 0-.5.224-.5.5s.224.5.5.5h4c.276 0 .5-.224.5-.5s-.224-.5-.5-.5zm.25 2h-4.5l1.188.782c.154.138.38.218.615.218h.895c.234 0 .461-.08.615-.218l1.187-.782zm3.75-13.799c0 3.569-3.214 5.983-3.214 8.799h-1.989c-.003-1.858.87-3.389 1.721-4.867.761-1.325 1.482-2.577 1.482-3.932 0-2.592-2.075-3.772-4.003-3.772-1.925 0-3.997 1.18-3.997 3.772 0 1.355.721 2.607 1.482 3.932.851 1.478 1.725 3.009 1.72 4.867h-1.988c0-2.816-3.214-5.23-3.214-8.799 0-3.723 2.998-5.772 5.997-5.772 3.001 0 6.003 2.051 6.003 5.772zm4-.691v1.372h-2.538c.02-.223.038-.448.038-.681 0-.237-.017-.464-.035-.69h2.535zm-10.648-6.553v-1.957h1.371v1.964c-.242-.022-.484-.035-.726-.035-.215 0-.43.01-.645.028zm-3.743 1.294l-1.04-1.94 1.208-.648 1.037 1.933c-.418.181-.822.401-1.205.655zm10.586 1.735l1.942-1.394.799 1.115-2.054 1.473c-.191-.43-.423-.827-.687-1.194zm-3.01-2.389l1.038-1.934 1.208.648-1.041 1.941c-.382-.254-.786-.473-1.205-.655zm-10.068 3.583l-2.054-1.472.799-1.115 1.942 1.393c-.264.366-.495.763-.687 1.194zm13.707 6.223l2.354.954-.514 1.271-2.425-.982c.21-.397.408-.812.585-1.243zm-13.108 1.155l-2.356 1.06-.562-1.251 2.34-1.052c.173.433.371.845.578 1.243zm-1.178-3.676h-2.538v-1.372h2.535c-.018.226-.035.454-.035.691 0 .233.018.458.038.681z" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- ---------------------------------------------SECTION5----------------------------------------------- -->
+    <section class="h-screen mx-auto max-w-7xl" id="section5">
+        <div class="relative items-center justify-center my-32 md:flex">
+            <img src="images/Under_tree.png" id="img5" class="max-w-xl" alt="">
+            <div class="space-y-6">
+                <p class="max-w-lg text-4xl" id="text5">Has <span class="font-bold text-green-400">co-authored</span>
+                    the book
+                    <span class="italic"> ‘In the Arena – Unleash your Entrepreneurial Spirit, Make your Idea a Roaring
+                        Success,’</span> along with 14 other people from across the world
+
+                </p>
+                <div class="" id="btn5">
+                    <a href="/" target="" class="px-6 py-4 border-2 border-pink-400 ">Know
+                        More</a>
+                </div>
+            </div>
+            <div class="absolute top-0 p-4 border-4 border-pink-400 rounded-full animate-bounce right-32 ball ">
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/MotionPathPlugin.min.js"></script>
+    <script>
+        // -----------------section1--------------
+        let tl1 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section1',
+                toggleActions: 'play none none pause',
+                // toggleClass: { targets: 'body', className: 'bg-white', duration: 1.0 },
+                pin: true,
+                scrub: 3,
+            }
+        });
+
+        tl1.from('#img1', { x: -200, opacity: 0, duration: 1 })
+            .from('#text1', { x: 200, opacity: 0, duration: 1 })
+            .from('.leaf', { y: 200, opacity: 0, duration: 1 }, '-=2')
+            .to('.leaf', { x: 700, y: 400, duration: 5, rotate: 90 })
+            .from('#textx', { x: 200, opacity: 0, duration: 1 }, '-=2')
+            .from('#btn1', { y: -200, opacity: 0, duration: 1 }, '-=2')
+        // .to('.dot', { y: 1700, duration: 5, rotation: 360, ease: 'bounce.out' })
+
+
+
+
+        // -----------------section2--------------
+        let tl2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section2',
+                toggleActions: 'play none none pause',
+                // toggleClass: { targets: 'body', className: 'bg-white', duration: 1.0 },
+                pin: true,
+                scrub: 2,
+            }
+        });
+
+        tl2.from('#img2', { x: -200, opacity: 0, duration: 1 })
+            .from('.cross', { opacity: 0, duration: 1 })
+            .from('#text2', { x: 200, opacity: 0, duration: 1 })
+            .from('#btn2', { y: 200, opacity: 0, duration: 1 }, '-=1')
+
+        // -----------------section3--------------
+        let tl3 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section3',
+                toggleActions: 'play none none pause',
+                pin: true,
+                scrub: 2,
+            }
+        });
+
+        tl3.from('#img3', { x: -200, opacity: 0, duration: 1 })
+            .from('.book', { y: -200, opacity: 0, duration: 1, rotate: 90 })
+            .from('#text3', { x: 200, opacity: 0, duration: 1 })
+
+        // -----------------section4--------------
+        let tl4 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section4',
+                toggleActions: 'play none none pause',
+                pin: true,
+                scrub: 2,
+            }
+        });
+
+        tl4.from('#img4', { x: -200, opacity: 0, duration: 1 })
+            .from('.bulb', { opacity: 0, duration: 1 })
+            .from('#text4', { x: 200, opacity: 0, duration: 1 })
+            .from('#btn4', { y: 200, opacity: 0, duration: 1 }, '-=1')
+        // -----------------section5--------------
+        let tl5 = gsap.timeline({
+            scrollTrigger: {
+                trigger: '#section5',
+                toggleActions: 'play none none pause',
+                pin: true,
+                scrub: 2,
+            }
+        });
+
+        tl5.from('#img5', { x: -200, opacity: 0, duration: 1 })
+            .from('.ball', { opacity: 0, duration: 1 })
+            .from('#text5', { x: 200, opacity: 0, duration: 1 })
+            .from('#btn5', { y: 200, opacity: 0, duration: 1 }, '-=1')
+
+
+        // ------------------EducationPop----------------
+
+
+        let tlEd = gsap.timeline().pause();
+        // let tlEd2 = gsap.timeline().pause();
+
+        tlEd.to('#edu1', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', })
+            .from('#mountain', { x: 400, opacity: 0, duration: 1, ease: 'power4.inOut', })
+            .from('#cloud1', { x: 400, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .from('.edu2', { x: 200, opacity: 0, duration: 1, ease: 'power4.inOut', onComplete: () => tlEd.pause() })
+            .from('.eduNext', { y: -200, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .to('.edu2', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', })
+            .to('#mountain', { x: -200, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .to('#cloud1', { x: -200, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .from('#cloud2', { x: 200, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .from('.eduPt2', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', onComplete: () => tlEd.pause() }, '-=1')
+            .to('.eduPt2', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', })
+            .to('#mountain', { x: 200, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .to('#cloud1', { x: -800, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .to('#cloud2', { x: -200, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .to('.eduNext', { x: 400, duration: 1, ease: 'power4.inOut', onComplete: () => tlEd.pause() }, '-=1')
+            .from('.eduPt3', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .to('.eduPt3', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', })
+            .to('.eduNext', { y: 200, opacity: 0, duration: 1, ease: 'power4.inOut', onComplete: () => tlEd.pause() }, '-=1')
+            .from('#sun', { y: 20, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .from('.eduClose', { y: -200, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+            .from('.eduPt4', { x: -200, opacity: 0, duration: 1, ease: 'power4.inOut', }, '-=1')
+
+
+        function next() {
+            tlEd.resume()
+
+        }
+
+        function prev() {
+            tlEd.reverse(1)
+            document.body.classList.remove('bg-sky')
+            enableScroll()
+        }
+
+        // function close() {
+        //     tlEd.reverse(1)
+
+        // }
+
+        function showEdu() {
+            tlEd.play()
+            // document.getElementById('section1').classList.add('bg-pink-500')
+            document.body.style.transition = 'all 1s'
+            document.body.classList.add('bg-sky')
+            disableScroll()
+            tl1.pause()
+        }
+
+        function disableScroll() {
+            // Get the current page scroll position
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+                // if any scroll is attempted, set this to the previous value
+                window.onscroll = function () {
+                    window.scrollTo(scrollLeft, scrollTop);
+                };
+        }
+
+        function enableScroll() {
+            window.onscroll = function () { };
+        }
+
+        // ------------------ValuesPop----------------
+
+
+        let tlValArrow = gsap.timeline().pause();
+        tlValArrow.from('#valueArrow', { opacity: 0, x: -20, ease: 'power4.inOut' })
+
+        let valuesTl = gsap.timeline().pause();
+        valuesTl.to('#landing', { opacity: 0, x: -200, ease: 'power4.inOut' })
+            .from('.pencil', { opacity: 0, x: 20, ease: 'power4.inOut' })
+            .from('.val1', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 100, ease: 'power4.inOut' })
+            .from('.val2', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .from('.inkpot', { opacity: 0, x: 20, ease: 'power4.inOut' }, '-=1')
+            .to('.pencil', { y: 200, ease: 'power4.inOut' })
+            .from('.val3', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 300, ease: 'power4.inOut' })
+            .from('.val4', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 400, ease: 'power4.inOut' })
+            .from('.val5', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 500, ease: 'power4.inOut' })
+            .from('.watch', { opacity: 0, x: 20, ease: 'power4.inOut' }, '-=1')
+            .from('.val6', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 600, ease: 'power4.inOut' })
+            .from('.val7', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 700, ease: 'power4.inOut' })
+            .from('.val8', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { y: 800, ease: 'power4.inOut' })
+            .from('.val9', { opacity: 0, x: 200, ease: 'power4.inOut' })
+            .to('.pencil', { x: -200, rotate: -45, ease: 'power4.inOut' })
+            .from('.back', { opacity: 0, y: 20, ease: 'power4.inOut' }, '-=1')
+
+
+
+        function showArrow() {
+            // document.getElementById('valueArrow').classList.remove
+            tlValArrow.play()
+        }
+        function removeArrow() {
+            // document.getElementById('valueArrow').classList.remove
+            tlValArrow.reverse()
+        }
+
+        function showValues() {
+            valuesTl.play()
+            document.body.style.transition = 'all 1s'
+            document.body.classList.add('bg-sand')
+            document.getElementById('values').classList.remove('hidden')
+            disableScroll()
+        }
+
+        function goback() {
+            valuesTl.reverse(1)
+            document.body.classList.remove('bg-sand')
+            document.getElementById('values').classList.add('hidden')
+            enableScroll()
+        }
+
+        let landingTl = new gsap.timeline()
+        landingTl.from('.first', { x: -400, opacity: 0 })
+        landingTl.from('.second', { x: 200, opacity: 0 })
+        landingTl.from('.intro', { opacity: 0 })
+        landingTl.from('.caption', { y: 100, opacity: 0 })
+        landingTl.from('.valuesText', { y: 100, opacity: 0 })
+    </script>
+</body>
+
+</html>
