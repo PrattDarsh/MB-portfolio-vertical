@@ -17,3 +17,7 @@ body{
 .hand{
     font-family: 'Fredericka the Great', cursive;
 }
+
+.btn{
+    border-radius: 60% 90% 60% 90%;
+}
